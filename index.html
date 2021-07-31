@@ -25,19 +25,14 @@
 </head>
 
 <body>
-    <div class="top-items-class" style="z-index: 999; width: 100%">
-        <image src="./src/reserve.png" class="top-img-class"></image><text>保护区</text>
-        <div style="width: 20px"></div>
-        <image src="./src/scenery.png" class="top-img-class"></image><text>景点</text>
-    </div>
     <div id="container" style="width: 100%; height: 100vh"></div>
     <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=0605f78f42de22a6ad03bfa69d08a7a0"></script>
     <script type="text/javascript">
         var imageLayer = new AMap.ImageLayer({
             url: './src/map.png',
             bounds: new AMap.Bounds(
-                [89.414564, 34.314134], //左下角
-                [94.048048, 36.273245] //右上角
+                [89.4, 34.305], //左下角
+                [94.1, 36.29] //右上角
             ),
             zooms: [0, 20]
         });
